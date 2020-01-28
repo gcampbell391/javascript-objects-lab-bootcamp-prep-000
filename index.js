@@ -1,5 +1,5 @@
+var obj2 = {}
 function updateObjectWithKeyAndValue(object, key, value){
-  var obj2 = {}
   obj2 = Object.assign({}, object)
   obj2[key] = value
   return obj2
@@ -7,4 +7,9 @@ function updateObjectWithKeyAndValue(object, key, value){
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   object[key] = value
   return object
+}
+function deleteFromObjectByKey(object, key){
+  obj2 = Object.assign({}, object)
+  delete obj2[key]
+  return obj2
 }
